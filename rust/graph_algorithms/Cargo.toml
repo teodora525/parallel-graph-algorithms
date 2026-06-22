@@ -1,6 +1,19 @@
 [package]
 name = "graph_algorithms"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+rand = "0.8"
+
+[lib]
+name = "graph_algorithms"
+path = "src/lib.rs"
+
+[[bin]]
+name = "graph_algorithms"
+path = "src/main.rs"
+
+[[bin]]
+name = "bench_seq"
+path = "src/bin/bench_seq.rs"

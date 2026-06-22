@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 rand = "0.8"
+rayon = "1.10"
 
 [lib]
 name = "graph_algorithms"
@@ -17,3 +18,7 @@ path = "src/main.rs"
 [[bin]]
 name = "bench_seq"
 path = "src/bin/bench_seq.rs"
+
+[[bin]]
+name = "bench_parallel"
+path = "src/bin/bench_parallel.rs"
